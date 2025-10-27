@@ -1,0 +1,51 @@
+---
+alwaysApply: true
+---
+
+
+# Cursor Rules – Editorial Style für "Code Wars"
+
+- Sprache: Deutsch; Ton: knapp, reflektiert, erzählerisch.
+- Ziel: Konsistenter Stil in allen Markdown-Dateien (`*.md`).
+
+## Anführungszeichen und Typografie
+
+- Verwende deutsche Anführungszeichen: „…“.
+- Gedankenstrich als Halbgeviertstrich: – (mit Leerzeichen davor und danach).
+- In Listen (Kapitel-Übersichten) keine Schlusspunkte am Zeilenende.
+
+## Umgang mit Anglizismen und Fachbegriffen
+
+- Erstnennung: Englischer Begriff mit kurzer deutscher Paraphrase in Klammern.
+  - Beispiel: „Observability“ (Beobachtbarkeit), „Distributed Monolith“ (verteilter Monolith).
+- Danach: Bevorzuge die deutsche Form. Wenn die deutsche Form unhandlich ist, den englischen Begriff ohne Anführungszeichen weiterverwenden.
+- Einheitliche Übersetzungen verwenden:
+  - „Operational“ → „operativ“
+  - „Deployment-Unit“ → „Bereitstellungseinheit“ (bei Erstnennung)
+  - „Runtime“/„Compile-Time“ → „Laufzeit“/„Kompilierzeit“ (bei Erstnennung)
+  - „HTTP-Call“ → „HTTP‑Aufruf“ (bei Erstnennung)
+  - „Service-Boundaries“ → „Service‑Grenzen“ (bei Erstnennung)
+  - „Great Split“ → „Große Trennung“ (bei Erstnennung)
+  - „Shared Fate“ → „geteiltes Schicksal“ (bei Erstnennung)
+
+## Eigennamen und etablierte Begriffe
+
+- Keine Anführungszeichen für Eigennamen und etablierte deutsche Begriffe.
+  - Beispiele: Todesstern, Jedi, Klonkriege, Sternenzerstörer.
+
+## Mikro-Stilregeln
+
+- Vermeide unnötige Mischexzeme zwischen DE/EN in einem Satz; konsistent bleiben.
+- Kurze, prägnante Sätze sind erlaubt; abwechslungsweise Flusssätze zur Rhythmusvariation einsetzen.
+- Fachbegriffe nur dann hervorheben (Anführungszeichen), wenn es der Erstnennung/Definition dient.
+
+## Beispiele
+
+- Erstnennung: „Monitoring“ (Überwachung) vs. „Observability“ (Beobachtbarkeit).
+- Folge: Beobachtbarkeit ist nicht optional.
+- Erstnennung: „Dependency Hell“ (Abhängigkeits‑Hölle).
+- Folge: Abhängigkeiten strikt pflegen.
+
+## Geltungsbereich
+
+- Gilt für alle redaktionellen Inhalte in diesem Projekt, insbesondere `Code Wars/`.

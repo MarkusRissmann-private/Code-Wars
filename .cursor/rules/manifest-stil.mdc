@@ -1,0 +1,211 @@
+---
+alwaysApply: true
+---
+
+# Cursor Rules – Manifest-Stil für "Code Wars"
+
+**Ziel:** Ein episch-mahnendes Manifest, kein Sachbuch. Ein Spiegel, der dem Leser vorgehalten wird.
+
+## Grundprinzipien
+
+### 1. Manifest, nicht Ratgeber
+
+- **Verkünden**, nicht erklären
+- **Spiegeln**, nicht belehren
+- **Mahnen**, nicht dozieren
+
+**Schlecht:** „Hier sind die fünf Schritte, die du befolgen solltest..."  
+**Gut:** „Es gibt Sätze, die den Fall ankündigen. Du hast sie gehört. Du wirst sie wieder sagen..."
+
+### 2. Der Spiegel-Effekt
+
+Der Leser muss sich **selbst** in der Geschichte erkennen.
+
+**Techniken:**
+
+- Direkte Ansprache: „Du kennst diese Stille..."
+- Rhetorische Fragen: „Erkennst du dich? In Anakin, der ‚easy' sagt?"
+- Abschließende Herausforderung: „Was wirst du schreiben?"
+
+**Vermeide:**
+
+- Abstrakte Distanz: „Man sollte..." oder „Teams müssen..."
+- Akademischen Ton: „Die Forschung zeigt..." oder „Best Practices empfehlen..."
+
+### 3. Narrative Einbettung statt Listen
+
+Listen und Bullet-Points brechen den Spiegel. Jede Lektion muss in eine **Szene** oder einen **inneren Monolog** eingebettet sein.
+
+**Schlecht:**
+
+```markdown
+## Die fünf wichtigsten Fragen
+
+1. Was ist die Verantwortung?
+2. Wie wird deployed?
+3. ...
+```
+
+**Gut:**
+
+```markdown
+## Das Notizbuch des Architekten
+
+Der Padawan fand ein altes Notizbuch. Handschrift. Kaffeeflecken.
+
+„Erste Frage: Was ist die EINE Verantwortung?"
+
+„Pause. Kaffee kalt. Weiter."
+
+„Zweite Frage: Wie wird es deployed?"
+```
+
+**Prinzip:** Verwandle Checklisten in **dramatische Artefakte** – Notizbücher, ungesendete E-Mails, nächtliche Grübeleien.
+
+### 4. Hybrid-Ansatz: Mythos + Realität
+
+**Mythische Ebene** (Star Wars):
+
+- Figuren als Archetypen: Anakin (der Optimist), Obi-Wan (der Zweifler), Qui-Gon (der Weise)
+- Metaphern: X-Wing (eleganter Service), Todesstern (Monolith mit Designfehler)
+
+**Reale Ebene** (Technologie):
+
+- Konkrete Tools: Azure Functions, Slack, Git, Google Drive
+- Reale Prozesse: Commits, Merge-Konflikte, CI/CD
+
+**Warum?** Der Leser erkennt sich in der **realen Technologie** (das bin ich!), während die **mythischen Figuren** emotionale Distanz für Selbstreflexion schaffen.
+
+**Behalte:**
+
+- Azure, Slack, Cosmos DB → real, erkennbar
+- „func new", „git commit" → real
+
+**Vermeide:**
+
+- „Imperial Cloud Platform" oder „Galactic Data Vault" → zu fantastisch, verliert Spiegeleffekt
+
+### 5. Epische Sprache
+
+**Rhythmus:**
+
+- Kurze, harte Sätze bei Wendepunkten: „Er löschte die Datei."
+- Längere, fließende Sätze bei Verzweiflung: „Er hatte diesen Moment schon erlebt, das Gefühl, gewonnen zu haben, das Gefühl, dass ‚einfach' bleiben würde."
+
+**Wiederholungen als Stilmittel:**
+
+- „Dreißig Minuten hätten alles gerettet."
+- „Dreißig Minuten. Fünf Fragen."
+- „Es dauerte dreißig Minuten. Es rettete drei Jahre."
+
+**Kommentare des Erzählers:**
+Sofort nach gefährlichen Momenten eine mahnende Stimme:
+
+```markdown
+„Easy", sagte er.
+
+*Er wusste nicht, dass „easy" das gefährlichste Wort ist. 
+Gefährlicher als „impossible". Denn „impossible" hält dich an. 
+„Easy" lässt dich rennen – geradewegs in die Dunkelheit.*
+```
+
+### 6. Die gefährlichen Worte
+
+Bestimmte Sätze signalisieren den Fall. Markiere sie sofort:
+
+- **„Easy"** → Die erste Lüge
+- **„Morgen"** → Die zweite Lüge
+- **„Wir haben doch schon..."** → Die vier gefährlichsten Worte
+- **„TBD"** → Architektur-Vakuum
+- **„Nur eine..."** → Der Riss im Kristall
+
+Behandle sie wie **Flüche**, die beschworen werden.
+
+### 7. Physische Details für Immersion
+
+Abstrakte Weisheit wird greifbar durch **physische Anker**:
+
+- „Kaffeeflecken. Oder Tränen?"
+- „Meine Hand schmerzt. Aber ich muss weiterschreiben."
+- „Draußen fährt ein Auto vorbei. Die Welt schläft. Ich nicht."
+- „Seine Hände zitterten."
+
+**Regel:** Jede wichtige Erkenntnis braucht einen **physischen Moment**.
+
+### 8. Strukturprinzip: Retrospektive
+
+Die Geschichte wird aus der **Zukunft** erzählt, vom „alten Jedi-Architekten vor den Ruinen".
+
+**Effekt:** Der Leser weiß von Anfang an, dass es schiefgehen wird. Die Spannung liegt nicht im **ob**, sondern im **wie** – und im **Erkennst du dich?**
+
+**Einschübe:**
+
+- „Drei Jahre später wird er vor den Ruinen stehen..."
+- „Dreißig Minuten Arbeit. Gelöscht. Drei Jahre später wusste er..."
+
+### 9. Das Ende jedes Kapitels
+
+Jedes Kapitel endet mit einer **direkten Herausforderung** an den Leser:
+
+```markdown
+*Du sitzt jetzt vor deinem Screen. Dein Projekt läuft. 
+Es ist stabil. Du hast gerade einen Sieg gefeiert.*
+
+*Und jetzt kommt die nächste Anforderung. Klein. Harmlos. 
+„Should be quick, right?"*
+
+*Was wirst du sagen?*
+
+*„Easy"?*
+
+*Oder „Stopp. Lasst uns dreißig Minuten nachdenken"?*
+```
+
+**Niemals** mit einer Zusammenfassung oder „Lessons Learned" enden. Immer mit einer **Frage** oder **Mahnung**.
+
+## Verbotene Muster
+
+❌ **Bullet-Point-Listen** ohne narrative Einbettung  
+❌ **Zusammenfassungen** („Wir haben gelernt...")  
+❌ **Abstrakte Distanz** („Man sollte beachten...")  
+❌ **Akademischer Ton** („Studien zeigen...")  
+❌ **Optimistische Lösungen** („Wenn du diese fünf Schritte befolgst...")  
+❌ **Reine Fantastik** (alles in Star-Wars-Begriffe übersetzen)
+
+## Erlaubte und erwünschte Muster
+
+✅ **Szenen mit Artefakten** (Notizbücher, E-Mails, Slack-Nachrichten)  
+✅ **Innere Monologe** der Figuren  
+✅ **Direkte Ansprache** des Lesers  
+✅ **Physische Details** für emotionale Momente  
+✅ **Wiederholungen** als rhetorisches Stilmittel  
+✅ **Prophetische Einschübe** aus der Zukunft  
+✅ **Tragische Ironie** (der Leser weiß, was die Figuren nicht wissen)
+
+## Beispiel-Transformation
+
+**Vorher (Sachbuch-Ton):**
+> Die wichtigsten Architektur-Fragen für ein neues Projekt sind:
+>
+> 1. Single Responsibility
+> 2. Deployment-Strategie
+> 3. Interface-Definition
+
+**Nachher (Manifest-Ton):**
+> Der Architekt schrieb, nachts, als alle schliefen:
+>
+> „Erste Frage: Was ist die EINE Verantwortung?"
+>
+> „Pause. Kaffee kalt. Weiter."
+>
+> „Zweite Frage: Wie wird es deployed?"
+>
+> Seine Hand schmerzte. Aber er musste weiterschreiben.
+>
+> Drei Jahre später fand der Padawan diese Zeilen. Seine Hände zitterten.
+
+## Geltungsbereich
+
+- Gilt für alle Kapitel von „Code Wars"
+- Ergänzt die technisch-redaktionellen Regeln in `redaktionelles.mdc`
+- Priorisiert **emotionale Wahrheit** über technische Vollständigkeit
