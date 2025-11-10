@@ -23,7 +23,7 @@ feat: Added API Beta support
 
 "Der Moment wovon?"
 
-"Der Moment, in dem aus einem X-Wing ein Todesstern wurde. Der Moment, in dem 'Wiederverwendung' zu 'Verkrüppelung' wurde."
+"Der Moment, in dem aus einem eleganten Service ein Monolith wurde. Der Moment, in dem ‚Wiederverwendung' zu ‚Verkrüppelung' wurde."
 
 Er klickte auf den Commit. Das Diff explodierte über den Bildschirm. 400 Zeilen geändert. In einer einzigen Datei. In einer einzigen Methode.
 

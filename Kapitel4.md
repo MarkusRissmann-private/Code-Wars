@@ -16,7 +16,7 @@ Der alte Architekt des Architektenordens öffnete drei Browser-Tabs nebeneinande
 
 **Rechts:** Das BPP System. Microservice-Fassade. 90-170 Stored Procedures. 500 Tenant-Datenbanken. Production-Traffic: 100%. Brennt.
 
-Der junge Padawan starrte auf die drei Tabs.
+Der junge Schüler starrte auf die drei Tabs.
 
 "Das... das sind drei Systeme?"
 
@@ -47,7 +47,7 @@ Er scrollte durch die Logs. Production Alerts. Vom BPP System. Alle paar Minuten
 
 "Siehst du das Muster?"
 
-Der Padawan nickte langsam. "Das System... es brennt. Permanent."
+Der Schüler nickte langsam. "Das System... es brennt. Permanent."
 
 "Ja. Und das Team? Das Team versucht, zwei Kriege gleichzeitig zu kämpfen. DMS zu migrieren. BPP zu stabilisieren. Sie können keins von beiden gewinnen."
 
@@ -64,7 +64,7 @@ Vier Hotfixes. In einem Tag.
 
 Alle in Stored Procedures.
 
-"Sie fügen Fixes hinzu," flüsterte der Padawan. "In das System, das nicht fixbar ist."
+"Sie fügen Fixes hinzu," flüsterte der Schüler. "In das System, das nicht fixbar ist."
 
 "Ja," sagte der Alte. "Das ist das Monolith-Erwachen. Wenn du merkst: Du kämpfst nicht gegen ein System. Du kämpfst gegen zwei. Und beide sind Hydras. Schneide einen Kopf ab, zwei wachsen nach."
 
@@ -484,7 +484,7 @@ TEAM: 5-6 Entwickler
 - **Healthcare.gov**: Launch-Desaster, $1.7B verschwendet
 - **Windows Vista**: 5 Jahre Development, kommerzieller Flop
 
-"Big Bang," sagte Qui-Gon, "ist verlockend. 'Wir fangen neu an. Alles richtig.' Aber es ist wie ein Flugzeug im Flug neu zu bauen. Möglich? Theoretisch. Empfehlenswert? Nein."
+"Big Bang," sagte Qion, "ist verlockend. 'Wir fangen neu an. Alles richtig.' Aber es ist wie ein Flugzeug im Flug neu zu bauen. Möglich? Theoretisch. Empfehlenswert? Nein."
 
 ---
 
@@ -529,7 +529,7 @@ TEAM: 3-4 Entwickler
 - ✗ Fundamentale Probleme unlösbar
 - ✗ Team-Frustration steigt
 
-"Refactoring," sagte Qui-Gon, "funktioniert wenn das Fundament okay ist. Man kann ein Haus renovieren—neue Fenster, neue Küche, neues Bad. Aber wenn das Fundament sinkt? Dann hilft keine Renovation."
+"Refactoring," sagte Qion, "funktioniert wenn das Fundament okay ist. Man kann ein Haus renovieren—neue Fenster, neue Küche, neues Bad. Aber wenn das Fundament sinkt? Dann hilft keine Renovation."
 
 Er zeigte auf die BPP-Zahlen.
 
@@ -1588,7 +1588,7 @@ Der alte Architekt des Architektenordens schloss die drei Browser-Tabs.
 
 "Und? Haben sie es geschafft?"
 
-Der junge Padawan wartete gespannt.
+Der junge Schüler wartete gespannt.
 
 "Ja," sagte der Alte. "18 Monate später. Phase 3 abgeschlossen. BPP war kein Zombie mehr. Es lebte. Sauber. Wartbar. Ohne SPs."
 

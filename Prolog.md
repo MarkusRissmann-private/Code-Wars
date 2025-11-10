@@ -1,4 +1,4 @@
-# Prolog: Die Chroniken der Code-Kriege
+# Prolog: Die Karte der Schlachtfelder
 
 ## Der alte Architekt und die unvollendete Geschichte
 
@@ -25,12 +25,12 @@ Nicht weil die technischen Lösungen falsch waren. Sondern weil die Muster zu ti
 
 Der alte Architekt stand vor einem leeren Whiteboard. Der Marker zitterte in seiner Hand.
 
-Der junge Padawan wartete. Sagte nichts.
+Der junge Schüler wartete. Sagte nichts.
 
 Dann begann der Alte zu schreiben. Nicht ordentlich. Nicht strukturiert. Die Namen der Schlachten strömten aus ihm wie eine Prophezeiung. Wie eine Beschwörung.
 
 ```text
-DER STRAHLENDE X-WING
+DER ERSTE SERVICE
 (Das Architektur-Vakuum)
 "TBD" ist keine Strategie
 Der Feind: Die Illusion, dass "einfach" einfach bleibt
@@ -44,7 +44,7 @@ Der Feind: Die Bequemlichkeit der bestehenden Infrastruktur
 
 ↓
 
-DIE CLONE WARS BEGINNEN
+DIE SERVICE-KLONE BEGINNEN
 (Der Distributed Monolith)
 Struktur-Trennung ≠ Deployment-Trennung
 Der Feind: Die Illusion von Separation
@@ -65,10 +65,38 @@ Der Feind: Die Blindheit des Erfolgs
 
 ↓
 
-LORD VADERS RÜCKKEHR
+DIE RÜCKKEHR DER GOVERNANCE
 (Architekturgovernance)
 Dokumentation ist Kommunikation mit der Zukunft
 Der Feind: Der Widerstand gegen Standards
+
+↓
+
+DIE GEISTER DER LEGACY
+(Das BPP-Erbe und die drei Wege der Modernisierung)
+Pragmatismus vs. Perfektionismus
+Der Feind: Die Illusion der schnellen Lösung
+
+↓
+
+DIE STRANGLER MIGRATION
+(Wie man einen Elefanten isst)
+Strangler Pattern ohne Zeitlimit = zwei tote Systeme
+Der Feind: Die Angst, das alte System zu töten
+
+↓
+
+DIE ZWEI WELTEN
+(Parallele V2/V3 Systeme)
+Parallel Systems sind nicht 2×, sondern 4× die Arbeit
+Der Feind: Die Angst vor dem Big Bang Switch
+
+↓
+
+DER FRIEDHOF DER GROSSEN SERVICES
+(Synchrone HTTP-Calls zwischen Microservices)
+Ein HTTP-Call ist harmlos. 23 sind ein Monolith.
+Der Feind: Die Versuchung der Einfachheit
 
 ↓
 
@@ -76,20 +104,6 @@ DIE SONAR-INQUISITION
 (Code-Quality-Governance)
 Metriken als Spiegel, nicht als Peitsche
 Der Feind: Die Balance zwischen Perfektion und Pragmatismus
-
-↓
-
-DER FRIEDHOF DER STERNENZERSTÖRER
-(Temporale Kopplung und Dependency Hell)
-HTTP zwischen Services ist ein trojanisches Pferd
-Der Feind: Die Verlockung der schnellen Lösung
-
-↓
-
-DER EVENT-STURM
-(Event-Proliferation)
-Events ohne Budget sind Chaos mit guten Absichten
-Der Feind: Die Demokratie ohne Disziplin
 
 ↓
 
@@ -101,13 +115,13 @@ Der Feind: Der eigene Ehrgeiz
 
 Er trat zurück. Starrte auf die Karte.
 
-„Zehn Schlachten," murmelte er. „Aber keine davon ist zufällig."
+„Zwölf Schlachten," murmelte er. „Aber keine davon ist zufällig."
 
 Seine Hand bewegte sich wieder. Zeichnete Pfeile zwischen den Namen.
 
 „Siehst du? Jede folgt aus der vorherigen. Jede Niederlage pflanzt den Samen für die nächste."
 
-Er zeigte auf den ersten Namen: DER STRAHLENDE X-WING.
+Er zeigte auf den ersten Namen: DER ERSTE SERVICE.
 
 „Ein Projekt beginnt ohne Plan. Einfach ist gut, denkt man. Bis die Komplexität kommt. Bis die Merge-Konflikte eskalieren."
 
@@ -119,19 +133,23 @@ Er schüttelte den Kopf.
 
 „Problem nicht gelöst. Man hat nur die Symptome vertrieben. Die Krankheit wuchert weiter."
 
-Sein Finger folgte den Pfeilen nach unten. DIE CLONE WARS. DAS MONOLITH-ERWACHEN. DIE INCIDENT-LAWINE.
+Sein Finger folgte den Pfeilen nach unten. DIE SERVICE-KLONE. DAS MONOLITH-ERWACHEN. DIE INCIDENT-LAWINE.
 
 „Und weil man sich siegreich fühlt, wird man übermütig. Man teilt Code. Man teilt Infrastruktur. Man teilt das Schicksal."
 
-Er zeigte auf die unteren Namen. DER FRIEDHOF. DER EVENT-STURM. DER FEATURE-KRIEG.
+Er zeigte auf die unteren Namen. DIE GEISTER DER LEGACY. DIE STRANGLER MIGRATION. DIE ZWEI WELTEN.
 
-„Und dann beginnt der langsame Kollaps. Incident für Incident. Standard für Standard. Dependency für Dependency."
+„Und dann kommt der Kampf mit dem Alten. Legacy modernisieren. Systeme migrieren. Zwei Welten parallel halten."
+
+Sein Finger glitt weiter. DER FRIEDHOF. DIE SONAR-INQUISITION. DER FEATURE-KRIEG.
+
+„Und dann beginnt der langsame Kollaps. Dependency für Dependency. Metrik für Metrik. Feature für Feature."
 
 Seine Hand fiel herab. Der Marker fiel zu Boden.
 
-„Bis man erkennt: Man hat nicht zehn separate Probleme."
+„Bis man erkennt: Man hat nicht zwölf separate Probleme."
 
-Er drehte sich zum Padawan um. Seine Augen waren nicht wütend. Nur... müde.
+Er drehte sich zum Schüler um. Seine Augen waren nicht wütend. Nur... müde.
 
 „Man hat ein einziges Problem: Man selbst."
 
@@ -148,7 +166,7 @@ Gegen den Drang, "Ja" zu sagen, wenn "Nein" richtig wäre.
 
 Er hatte gelernt, zu spät, aber er hatte gelernt: Die wichtigsten Schlachten in der Software-Entwicklung werden nicht im Code gewonnen.
 
-Sie werden gewonnen in den Meetings, wo man „Stopp" sagt, bevor der Todesstern gebaut wird. In den Architektur-Reviews, wo man „Warum?" fragt, bevor man „Wie?" beantwortet. In den Pull Requests, wo man „Das ist zu komplex" sagt, auch wenn es funktioniert. In den Retrospektiven, wo man zugibt: „Wir haben einen Fehler gemacht." In den stillen Momenten, wo man sich fragt: „Bauen wir das Richtige?"
+Sie werden gewonnen in den Meetings, wo man „Stopp" sagt, bevor der Monolith gebaut wird. In den Architektur-Reviews, wo man „Warum?" fragt, bevor man „Wie?" beantwortet. In den Pull Requests, wo man „Das ist zu komplex" sagt, auch wenn es funktioniert. In den Retrospektiven, wo man zugibt: „Wir haben einen Fehler gemacht." In den stillen Momenten, wo man sich fragt: „Bauen wir das Richtige?"
 
 Die technischen Fähigkeiten waren nie das Problem. Jeder in seinem Team konnte coden. Jeder konnte deployen. Jeder konnte debuggen.
 

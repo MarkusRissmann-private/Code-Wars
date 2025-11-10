@@ -239,11 +239,11 @@ Und genau in diesem Moment des Triumphs wurde der Same für den nächsten Krieg 
 
 ---
 
-## TEIL II: Der strahlende X-Wing
+## TEIL II: Der erste Service
 
 *Drei Wochen nach dem großen Schnitt...*
 
-Der neue `backend-api`-Riegel war gerade entstanden. Noch atmend. Noch zitternd von der Geburt.
+Das neue `backend-api`-Repository war gerade entstanden. Noch atmend. Noch zitternd von der Geburt.
 
 In diesem Moment—genau jetzt, wenn das Team hochmotiviert war, wenn der Tech Debt gerade abgebaut wurde—kam die erste Mission für dieses neue Backend-Repository.
 
@@ -253,7 +253,7 @@ Eine neue Anforderung. Sie hörte sich einfach an.
 
 Der Tech Lead, nennen wir ihn Arik Dane, saß im Konferenzraum und lächelte. Endlich. Endlich konnte er bauen. Ohne die Frontend-Pipelines zu blockieren. Ohne die Konflikte.
 
-"Das ist perfekt für den neuen Backend-Riegel," sagte er. "Ein sauberes Projekt. Ein grünes Feld."
+"Das ist perfekt für das neue Backend-Repository," sagte er. "Ein sauberes Projekt. Ein grünes Feld."
 
 Arik war jung, begabt, ungeduldig. Er hatte die Azure Fundamentals bestanden. Er hatte gesehen, wie das Unternehmen gerade eine Architektur-Schlacht gewonnen hatte.
 
@@ -331,7 +331,7 @@ cd DmsUploader
 git init
 func new --name DmsUploader --worker-runtime dotnet-isolated
 git add .
-git commit -m "Initial commit - The X-Wing is born"
+git commit -m "Initial commit - The first service"
 ```
 
 Der erste Commit war sauber. Schön. Ein leeres Template. Ein README.md mit großen Träumen. Eine `DmsUploader.cs` mit einem einzigen HttpTrigger.
@@ -368,7 +368,7 @@ Aber in diesem Moment fühlte es sich richtig an. Es fühlte sich agil an.
 
 Er drückte commit.
 
-Der X-Wing war geboren.
+Der erste Service war geboren.
 
 ### IX. Der Rat der Stimmen
 
@@ -408,7 +408,7 @@ Oben starrte auf sein Interface. War es Over-Engineering? Sie hatten eine API. E
 
 Er löschte die Datei.
 
-**Die Stimme der Weisheit** (eine Erinnerung an einen alten Mentor vom Architektenorden):
+**Die Stimme der Weisheit** (eine Erinnerung an Qion Varr vom Architektenorden):
 
 *"Immer in Bewegung die Zukunft ist. Das 'Nur' hüte dich vor. Der kleinste Riss, den größten Damm er bricht. Planlos, agil nicht ist."*
 
@@ -494,7 +494,7 @@ Das Team war im Flow. Arik und Oben schrieben sauberen Code. Die Pipelines waren
 
 Das Management war begeistert. "Ahead of schedule!"
 
-Der Product Owner schickte ein GIF. Ein X-Wing, der durch den Todesstern fliegt. "You guys are legends!"
+Der Product Owner schickte ein GIF. "You guys are legends!"
 
 Das Team fühlte sich wie Helden.
 
@@ -562,7 +562,7 @@ Sie dachten, die Lektion sei: **"Alles sollte einfach sein."**
 
 Die echte Lektion war: **"Wenn zwei Systeme mit unterschiedlichen Rhythmen kollidieren, trenne sie. Aber verstehe warum—nicht nur, dass sie kollidieren, sondern warum."**
 
-Sie würden es nicht verstehen. Nicht bis das Neue Project—dieses DmsUploader Service, dieser strahlende X-Wing—zusammengebrochen war und sich in einen Todesstern verwandelt hatte.
+Sie würden es nicht verstehen. Nicht bis das neue Projekt—dieser DmsUploader Service, dieser erste elegante Service—zusammengebrochen war und sich in einen Monolithen verwandelt hatte.
 
 Aber Qion Varr wusste: Das war der Weg. So trainiert der Architektenorden seine Schüler. Nicht durch Vorträge. Durch Ruinen.
 
@@ -574,7 +574,7 @@ Aber Qion Varr wusste: Das war der Weg. So trainiert der Architektenorden seine 
 
 *Die Lektion war: "Verstehe deine Grenzen. Erkenne, wenn Grenzen nötig sind. Und erkenne, wenn neue Grenzen entstehen—nicht nur zwischen Teams, sondern innerhalb von Services."*
 
-*Der DmsUploader Service ist wie ein neuer Backend-Repository. Ein neuer Anfang. Eine grüne Wiese.*
+*Der DmsUploader Service ist wie ein neues Backend-Repository. Ein neuer Anfang. Eine grüne Wiese.*
 
 *Aber die Frage ist nicht: "Wie schnell können wir bauen?"*
 

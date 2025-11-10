@@ -1,8 +1,8 @@
 # Kapitel 5: Die Incident-Lawine
 
-## Prolog: Der blinde Todesstern
+## Prolog: Das blinde System
 
-*„Ein System ohne Observability ist wie ein Todesstern ohne Fenster. Von außen sieht es mächtig aus. Von innen weißt du nicht, ob du fliegst oder fällst. Bis du crashst.“*
+*„Ein System ohne Observability ist wie ein Schiff ohne Fenster. Von außen sieht es mächtig aus. Von innen weißt du nicht, ob du fliegst oder fällst. Bis du crashst."*
 
 – Aus den Chroniken des Architektenordens
 
@@ -18,7 +18,7 @@ Der alte Architekt des Architektenordens öffnete vier Browser-Tabs nebeneinande
 
 **Tab 4:** Das gemeinsame Alerting-Tool. 47 ungelesene Alerts. Von allen drei Systemen. Rot. Gelb. Orange. Ein Feuerwerk.
 
-Der junge Padawan starrte auf die vier Tabs.
+Der junge Schüler starrte auf die vier Tabs.
 
 "Aber... das sind drei verschiedene Systeme? Wie kann man das überhaupt... sehen?"
 
@@ -37,7 +37,7 @@ Er zeigte auf Tab 4. Ein neuer Alert blinkte. Dann noch einer. Dann drei mehr.
 🔴 BPP: GetCalculationSP timeout (Tenant 143)
 ```
 
-"Welcher ist kritisch?" fragte der Padawan.
+"Welcher ist kritisch?" fragte der Schüler.
 
 "Alle. Keiner. Niemand weiß es," sagte der Alte. "Das ist die Incident-Lawine. Wenn du zu viele Systeme hast. Zu wenig Observability. Und zu viele Alerts, die nichts bedeuten."
 
@@ -85,23 +85,23 @@ Success Rate: 91.2%
 
 "Alles grün," sagte der Tech Lead. "Oder... meistens grün. BPP ist bei 91%, aber das ist normal für SPs."
 
-"Normal?" fragte Qui-Gon. Seine Stimme war ruhig. Zu ruhig.
+"Normal?" fragte Qion. Seine Stimme war ruhig. Zu ruhig.
 
 "Ja. Die Stored Procedures haben Edge Cases. Timeouts. Deadlocks. Das ist—"
 
-"Das ist," unterbrach Qui-Gon, "9% Fehlerrate. Das sind 346 failed requests. In der letzten Stunde. Bei 3,847 total."
+"Das ist," unterbrach Qion, "9% Fehlerrate. Das sind 346 failed requests. In der letzten Stunde. Bei 3,847 total."
 
 "Aber die meisten sind Timeouts. Die User retry—"
 
-"Die User sollten nicht retryen müssen," sagte Qui-Gon fest. "Und wenn wir nicht wissen, welche SPs failen, wie sollen wir sie priorisieren für Migration?"
+"Die User sollten nicht retryen müssen," sagte Qion fest. "Und wenn wir nicht wissen, welche SPs failen, wie sollen wir sie priorisieren für Migration?"
 
 Stille.
 
-"Wir... haben Logs?" versuchte Anakin.
+"Wir... haben Logs?" versuchte Arik.
 
 "Zeig mir."
 
-Anakin öffnete Application Insights. Suchte nach Errors. Letzter Stunde.
+Arik öffnete Application Insights. Suchte nach Errors. Letzter Stunde.
 
 ```text
 [08:23:14] ERROR: Timeout in GetCalculationSP
@@ -119,9 +119,9 @@ Anakin öffnete Application Insights. Suchte nach Errors. Letzter Stunde.
 - Service-Name
 - Keine weiteren Details
 
-"Welcher Tenant?" fragte Qui-Gon.
+"Welcher Tenant?" fragte Qion.
 
-Anakin scrollte durch die Logs. "Steht nicht drin."
+Arik scrollte durch die Logs. "Steht nicht drin."
 
 "Welche SP genau?"
 
@@ -129,9 +129,9 @@ Anakin scrollte durch die Logs. "Steht nicht drin."
 
 "Request-ID zum Tracen?"
 
-Anakin zögerte. "Wir... haben keine Request-IDs. Noch nicht."
+Arik zögerte. "Wir... haben keine Request-IDs. Noch nicht."
 
-Qui-Gon schloss die Augen. Atmete tief ein. Aus.
+Qion schloss die Augen. Atmete tief ein. Aus.
 
 "Wir sind blind," sagte er leise. "Wir haben drei Systeme in Production. Und wir sind komplett blind."
 
@@ -141,13 +141,13 @@ Qui-Gon schloss die Augen. Atmete tief ein. Aus.
 
 ### 14:47 Uhr - Derselbe Montag
 
-Anakin war im Flow. SP-Migration. `CalculateDiscountSP` → C# Code. Tests schreiben. Clean Code.
+Arik war im Flow. SP-Migration. `CalculateDiscountSP` → C# Code. Tests schreiben. Clean Code.
 
 Sein Slack piepte.
 
 **Client Support:** "Urgent - Tenant 89 sagt alle Calculations sind falsch?"
 
-Anakin blinzelte. Checkte das Dashboard.
+Arik blinzelte. Checkte das Dashboard.
 
 ```text
 BPP CalculationService: ✅ Healthy
@@ -158,7 +158,7 @@ Success Rate: 91.4% (leicht gestiegen!)
 
 **Support:** "Ja. Seit ca. 2 PM. Alle Projekte. Alle Calculations zeigen 0.00 als Result."
 
-Anakin's Herz sank.
+Arik's Herz sank.
 
 0.00.
 
@@ -168,7 +168,7 @@ Er öffnete Application Insights. Suchte nach Tenant 89. Nichts. Suchte nach "Ca
 
 "Fuck," flüsterte er.
 
-Er rief Qui-Gon an.
+Er rief Qion an.
 
 "Wir haben ein Problem. Tenant 89. Calculations zeigen 0.00."
 
@@ -178,12 +178,12 @@ Er rief Qui-Gon an.
 
 "Haben wir etwas deployed um 2 PM?"
 
-Anakin checkte die Deployment-History.
+Arik checkte die Deployment-History.
 
 ```text
 [13:47] BPP CalculationService deployed
   - Feature: Migrated CalculateDiscountSP to C#
-  - Deployed by: Anakin
+  - Deployed by: Arik
   - Status: ✅ Success
 ```
 
@@ -199,7 +199,7 @@ Oh nein.
 
 "Und Tenant 89?"
 
-Anakin checkte die Feature-Flag-Configuration.
+Arik checkte die Feature-Flag-Configuration.
 
 ```json
 {
@@ -215,7 +215,7 @@ Anakin checkte die Feature-Flag-Configuration.
 
 Tenant 89 war aktiviert.
 
-Anakin scrollte durch die Git-History der Config-Datei.
+Arik scrollte durch die Git-History der Config-Datei.
 
 ```text
 commit f8a9b2c - [2 weeks ago]
@@ -226,7 +226,7 @@ feat: Enable new discount calculation for Tenant 89
 
 Zwei Wochen alt. Aus einem alten Feature-Test. Niemand hatte es reverted.
 
-"Tenant 89 war auf dem neuen Code," sagte Anakin langsam. "Mein neuer Code. Der funktioniert für Tenant 1. Aber nicht für Tenant 89."
+"Tenant 89 war auf dem neuen Code," sagte Arik langsam. "Mein neuer Code. Der funktioniert für Tenant 1. Aber nicht für Tenant 89."
 
 "Rollback. Jetzt."
 
@@ -238,13 +238,13 @@ Zwei Wochen alt. Aus einem alten Feature-Test. Niemand hatte es reverted.
 
 ## III. Die Rollback-Hölle
 
-**14:58 Uhr:** Anakin startete den Rollback.
+**14:58 Uhr:** Arik startete den Rollback.
 
 **15:04 Uhr:** Deployment complete. CalculationService rollback.
 
 **15:07 Uhr:** Slack Message von Support: "Tenant 89 sagt, calculations sind immer noch 0.00?"
 
-Anakin starrte auf den Screen.
+Arik starrte auf den Screen.
 
 Rollback war erfolgreich. Der alte Code lief. Warum funktionierte es nicht?
 
@@ -262,7 +262,7 @@ WHERE TenantId = 89
 
 Die falschen Berechnungen waren in der Datenbank. Permanent. Der Rollback änderte den Code, aber nicht die Daten.
 
-"Qui-Gon," Anakin's Stimme zitterte, "die falschen Daten sind in der DB. Wir können nicht einfach rollbacken."
+"Qion," Arik's Stimme zitterte, "die falschen Daten sind in der DB. Wir können nicht einfach rollbacken."
 
 "Wie viele Rows?"
 
@@ -276,7 +276,7 @@ Die falschen Berechnungen waren in der Datenbank. Permanent. Der Rollback änder
 
 ---
 
-**15:23 Uhr:** Anakin schrieb ein SQL-Script. Zur Re-Calculation.
+**15:23 Uhr:** Arik schrieb ein SQL-Script. Zur Re-Calculation.
 
 **15:47 Uhr:** Script tested gegen Tenant 1. Funktioniert.
 
@@ -284,7 +284,7 @@ Die falschen Berechnungen waren in der Datenbank. Permanent. Der Rollback änder
 
 **16:04 Uhr:** Support meldet: "Calculations sind korrekt jetzt. Tenant ist happy."
 
-**16:05 Uhr:** Anakin lehnte sich zurück. Erschöpft.
+**16:05 Uhr:** Arik lehnte sich zurück. Erschöpft.
 
 Total Time-to-Resolution: 78 Minuten.
 
@@ -300,7 +300,7 @@ Davon:
 
 Am nächsten Tag. 10:00 AM. Conference Room.
 
-Qui-Gon schrieb an das Whiteboard:
+Qion schrieb an das Whiteboard:
 
 ```text
 INCIDENT #347 - TENANT 89 CALCULATION FAILURE
@@ -328,11 +328,11 @@ Root Causes:
 6. Deployment ohne Smoke-Tests
 ```
 
-"Das," sagte Qui-Gon, "ist ein klassisches Beispiel für: Wir sind blind."
+"Das," sagte Qion, "ist ein klassisches Beispiel für: Wir sind blind."
 
 "Aber wir haben Monitoring?" protestierte Palpatine. "Application Insights. Azure Metrics. Health Checks."
 
-"Wir haben Infra-Monitoring," korrigierte Qui-Gon. "CPU, Memory, Request Count. Das sagt uns: 'System läuft'. Aber es sagt uns nicht: 'System ist korrekt'."
+"Wir haben Infra-Monitoring," korrigierte Qion. "CPU, Memory, Request Count. Das sagt uns: 'System läuft'. Aber es sagt uns nicht: 'System ist korrekt'."
 
 Er zeichnete zwei Spalten:
 
@@ -358,7 +358,7 @@ BUSINESS OBSERVABILITY (haben wir nicht)
 → Würde uns sagen: "23 Zero-Results in 1 Stunde"
 ```
 
-"Wie implementiert man das?" fragte Obi-Wan.
+"Wie implementiert man das?" fragte Oben.
 
 "Structured Logging. Custom Metrics. Business-Level-Alerts."
 
@@ -368,7 +368,7 @@ BUSINESS OBSERVABILITY (haben wir nicht)
 
 ### Freitag, 03:17 AM
 
-Obi-Wan's Phone explodierte.
+Oben's Phone explodierte.
 
 Nicht ein Ping. Ein Sturm. PagerDuty. Teams. Slack. Email.
 
@@ -417,11 +417,11 @@ Alles brannte. Gleichzeitig.
 
 Er rief das Team an. Emergency War Room. 3:30 AM. Vier verschlafene Entwickler.
 
-"Okay," Obi-Wan versuchte ruhig zu klingen, "was sehen wir?"
+"Okay," Oben versuchte ruhig zu klingen, "was sehen wir?"
 
 Niemand wusste es.
 
-Anakin öffnete Application Insights. BPP Logs.
+Arik öffnete Application Insights. BPP Logs.
 
 ```text
 [03:12:15] ERROR: GetCalculationSP timeout
@@ -431,9 +431,9 @@ Anakin öffnete Application Insights. BPP Logs.
 ... [2,000+ weitere Errors in 5 Minuten]
 ```
 
-"Was war zuerst?" fragte Qui-Gon (er war auch online, natürlich).
+"Was war zuerst?" fragte Qion (er war auch online, natürlich).
 
-"Unmöglich zu sagen," sagte Anakin. "Die Timestamps sind alle innerhalb derselben Sekunde."
+"Unmöglich zu sagen," sagte Arik. "Die Timestamps sind alle innerhalb derselben Sekunde."
 
 "Checkt die Database."
 
@@ -448,7 +448,7 @@ CPU: 98%
 
 "Die Database," sagte Palpatine langsam, "ist am Limit."
 
-"Warum?" fragte Obi-Wan.
+"Warum?" fragte Oben.
 
 "Keine Ahnung. Zu viele Connections? Zu viele Queries? Eine langsame SP?"
 
@@ -467,7 +467,7 @@ EXEC GetCalculationSP @TenantId = 143, @ProjectId = ...
 
 "Warum 247?"
 
-"Weil..." Anakin dachte nach, "weil jeder Timeout zu einem Retry führt? Und die Retries stapeln sich?"
+"Weil..." Arik dachte nach, "weil jeder Timeout zu einem Retry führt? Und die Retries stapeln sich?"
 
 "Aber warum hängt GetCalculationSP?"
 
@@ -477,7 +477,7 @@ Niemand wusste es.
 
 **03:47 Uhr:** Das Team hatte keine Antwort.
 
-**03:52 Uhr:** Qui-Gon: "Killed die SP-Queries. Manuell."
+**03:52 Uhr:** Qion: "Killed die SP-Queries. Manuell."
 
 ```sql
 -- Find GetCalculationSP queries for Tenant 143
@@ -503,17 +503,17 @@ KILL 548
 
 **04:15 Uhr:** Das Team saß da. Erschöpft. Verwirrt.
 
-"Was," fragte Obi-Wan, "war das?"
+"Was," fragte Oben, "war das?"
 
-"Eine Cascade," sagte Qui-Gon. "Eine SP hängt. Alle Requests stauen sich. Database wird voll. Andere Services können nicht mehr connecten. Alles bricht zusammen."
+"Eine Cascade," sagte Qion. "Eine SP hängt. Alle Requests stauen sich. Database wird voll. Andere Services können nicht mehr connecten. Alles bricht zusammen."
 
 "Aber warum hing GetCalculationSP?"
 
-"Keine Ahnung," sagte Qui-Gon ehrlich. "Wir haben nicht genug Monitoring um das zu sagen. Wir sehen nur: Es hing. Nicht: Warum."
+"Keine Ahnung," sagte Qion ehrlich. "Wir haben nicht genug Monitoring um das zu sagen. Wir sehen nur: Es hing. Nicht: Warum."
 
 "Was machen wir?"
 
-"Wir bauen Observability," sagte Qui-Gon. "Richtig. Von Grund auf."
+"Wir bauen Observability," sagte Qion. "Richtig. Von Grund auf."
 
 ---
 
@@ -523,7 +523,7 @@ KILL 548
 
 Montag. Das Team saß im Conference Room.
 
-Qui-Gon präsentierte einen Plan:
+Qion präsentierte einen Plan:
 
 ```text
 OBSERVABILITY-PROJEKT - 4 WOCHEN
@@ -557,7 +557,7 @@ Phase 4: DISTRIBUTED TRACING (Woche 4)
 
 "Vier Wochen," sagte der Tech Lead. "Das bedeutet: Keine SP-Migration. Keine Features."
 
-"Das bedeutet," korrigierte Qui-Gon, "wir investieren vier Wochen, damit die nächsten 20 Wochen SP-Migration nicht die Hölle sind."
+"Das bedeutet," korrigierte Qion, "wir investieren vier Wochen, damit die nächsten 20 Wochen SP-Migration nicht die Hölle sind."
 
 "Und das Management?"
 
@@ -581,7 +581,7 @@ Er sah zum Team.
 
 ### Woche 1 - Request-IDs & Correlation
 
-**Tag 1:** Qui-Gon erklärte das Konzept.
+**Tag 1:** Qion erklärte das Konzept.
 
 "Jeder Request bekommt eine ID. Diese ID wird durch ALLE Services getragen. Immer. Überall."
 
@@ -618,7 +618,7 @@ DMS-Old: (nachträglich hinzugefügt, komplizierter)
 
 **Tag 4:** Testing.
 
-Qui-Gon triggerte einen Request. Checkte die Logs.
+Qion triggerte einen Request. Checkte die Logs.
 
 ```text
 // In Application Insights:
@@ -636,7 +636,7 @@ RequestId: abc-123 | SP: GetCalculationSP | Duration: 247ms
 RequestId: abc-123 | TenantId: 89 | Calculation complete
 ```
 
-"Jetzt," sagte Qui-Gon, "können wir einen Request vom Anfang bis Ende tracen."
+"Jetzt," sagte Qion, "können wir einen Request vom Anfang bis Ende tracen."
 
 ---
 
@@ -669,7 +669,7 @@ traces
 | summarize count() by customDimensions.Reason
 ```
 
-"Jetzt," sagte Qui-Gon, "können wir fragen: 'Warum sind Calculations für Tenant 89 slow?' Und wir bekommen Antworten."
+"Jetzt," sagte Qion, "können wir fragen: 'Warum sind Calculations für Tenant 89 slow?' Und wir bekommen Antworten."
 
 ---
 
@@ -725,7 +725,7 @@ public async Task<CalculationResult> CalculateAsync(...)
 
 **Tag 3:** Dashboard erstellen.
 
-Qui-Gon baute ein Azure Dashboard:
+Qion baute ein Azure Dashboard:
 
 ```text
 ╔════════════════════════════════════════════════╗
@@ -759,9 +759,9 @@ Qui-Gon baute ein Azure Dashboard:
 ╚════════════════════════════════════════════════╝
 ```
 
-"Jetzt," sagte Qui-Gon, "sehen wir nicht nur 'System läuft'. Wir sehen: 'Tenant 143 hat ein Problem. GetCalculationSP ist slow für ihn. Seine Success-Rate ist 73%."
+"Jetzt," sagte Qion, "sehen wir nicht nur 'System läuft'. Wir sehen: 'Tenant 143 hat ein Problem. GetCalculationSP ist slow für ihn. Seine Success-Rate ist 73%."
 
-"Und das hätte uns bei der 3 AM Cascade geholfen?" fragte Obi-Wan.
+"Und das hätte uns bei der 3 AM Cascade geholfen?" fragte Oben.
 
 "Ja. Wir hätten gesehen: 'Tenant 143 triggert 247 Timeouts'. Wir hätten gewusst: Nicht alle Tenants. Nur einer. Das ändert die Strategie."
 
@@ -771,7 +771,7 @@ Qui-Gon baute ein Azure Dashboard:
 
 ### Woche 3 - Von 47 Alerts zu 8 Alerts
 
-"Wir haben ein Problem," sagte Qui-Gon und zeigte das aktuelle Alerting:
+"Wir haben ein Problem," sagte Qion und zeigte das aktuelle Alerting:
 
 ```text
 AKTUELLE ALERTS (47 total):
@@ -858,7 +858,7 @@ ON-CALL ACTION: IMMEDIATE
      → Monitor
      
    IF None of above:
-     → Escalate to Qui-Gon
+     → Escalate to Qion
      → Document everything
 
 4. COMMUNICATION
@@ -873,7 +873,7 @@ ON-CALL ACTION: IMMEDIATE
 ═══════════════════════════════════════════════
 ```
 
-"Jetzt," sagte Qui-Gon, "hat jeder Alert einen klaren Prozess. Niemand muss raten."
+"Jetzt," sagte Qion, "hat jeder Alert einen klaren Prozess. Niemand muss raten."
 
 ---
 
@@ -881,7 +881,7 @@ ON-CALL ACTION: IMMEDIATE
 
 ### Woche 4 - End-to-End Visibility
 
-"Das finale Puzzle-Piece," sagte Qui-Gon. "Wir können jetzt einzelne Requests tracen. Aber können wir sehen: Wo verbringt der Request seine Zeit?"
+"Das finale Puzzle-Piece," sagte Qion. "Wir können jetzt einzelne Requests tracen. Aber können wir sehen: Wo verbringt der Request seine Zeit?"
 
 Er öffnete Application Insights. Zeigte das neue Distributed Tracing Feature.
 
@@ -926,9 +926,9 @@ Total Duration: 5,847ms
    └─ Return: 35ms
 ```
 
-"Jetzt," sagte Qui-Gon, "sehen wir: Von 5.8 Sekunden total, verbringt der Request 1.8 Sekunden in GetCalculationSP und 2.4 Sekunden in zusätzlicher Logic."
+"Jetzt," sagte Qion, "sehen wir: Von 5.8 Sekunden total, verbringt der Request 1.8 Sekunden in GetCalculationSP und 2.4 Sekunden in zusätzlicher Logic."
 
-"Die SP ist schnell," bemerkte Anakin. "1.8 Sekunden. Das Problem ist die Logic drumherum?"
+"Die SP ist schnell," bemerkte Arik. "1.8 Sekunden. Das Problem ist die Logic drumherum?"
 
 "Genau. Die SP selbst ist performant. Aber der Workflow hat noch zwei weitere SP-Calls. Validierung. Transformation. Wir können das nicht optimieren, weil alles ein Monolith ist."
 
@@ -967,7 +967,7 @@ Wahrscheinlich NEIN (initial)!
 Aber: Wir können es iterativ verbessern
 ```
 
-"Und das hilft bei der SP-Migration-Priorisierung?" fragte Anakin.
+"Und das hilft bei der SP-Migration-Priorisierung?" fragte Arik.
 
 "Exakt. Wir migrieren zuerst die SPs, die Teil von langsamen Workflows sind. Nicht weil die SPs langsam sind—sondern weil wir den Workflow optimieren wollen. Maximum Impact auf User-Experience."
 
@@ -1060,7 +1060,7 @@ Nur: Alert öffnen. Lesen. Verstehen. Action ausführen. Fertig.
 
 ### Monat 5 - Observability vs. Blind
 
-Qui-Gon zeigte einen Vergleich:
+Qion zeigte einen Vergleich:
 
 ```text
 ╔════════════════════════════════════════════════════════╗
@@ -1100,7 +1100,7 @@ Der Product Owner starrte auf die Zahlen.
 
 "Das... das ist ein anderes System. Komplett."
 
-"Nein," sagte Qui-Gon. "Es ist dasselbe System. Aber jetzt können wir es sehen."
+"Nein," sagte Qion. "Es ist dasselbe System. Aber jetzt können wir es sehen."
 
 ---
 
@@ -1320,7 +1320,7 @@ Sie waren nicht mehr blind.
 
 ---
 
-***"Ein System ohne Observability ist wie ein Todesstern ohne Fenster. Du fühlst dich mächtig. Bis du blind in ein Asteroidenfeld fliegst. Dann fühlst du nur: Nichts. Bis zum Crash."***
+***„Ein System ohne Observability ist wie ein Schiff ohne Fenster. Du fühlst dich mächtig. Bis du blind in ein Asteroidenfeld fliegst. Dann fühlst du nur: Nichts. Bis zum Crash."***
 
 – Qion Varr, Überlebender der Incident‑Lawine
 
@@ -1328,6 +1328,6 @@ Sie waren nicht mehr blind.
 
 **Ende Kapitel 5**
 
-**Nächstes Kapitel:** "Lord Vaders Rückkehr"
+**Nächstes Kapitel:** „Die Rückkehr der Governance"
 
 Die Sonar-Inquisition kehrt zurück. Diesmal mit Governance-Power. Und Code-Quality-Gates, die niemand passieren kann.

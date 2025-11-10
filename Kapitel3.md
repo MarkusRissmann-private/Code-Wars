@@ -1,4 +1,4 @@
-# Kapitel 3: Die Klonkriege beginnen
+# Kapitel 3: Die Service-Klone beginnen
 
 ## Prolog: Der Triumph der Narren
 
@@ -48,7 +48,7 @@ Total: 47 Klassen, 23,891 Zeilen Code
 In EINER Function App
 ```
 
-Der junge Padawan starrte auf die Zahlen. "Das... das sind fast 24,000 Zeilen. In einer Function App?"
+Der junge Schüler starrte auf die Zahlen. "Das... das sind fast 24,000 Zeilen. In einer Function App?"
 
 "Ja."
 
@@ -78,7 +78,7 @@ commit 8f3c5b1 - feat: Add API Epsilon support
 
 "Siehst du das Muster?"
 
-Der junge Padawan nickte langsam. "Jeder Commit fügt etwas hinzu. Niemand entfernt. Niemand trennt."
+Der junge Schüler nickte langsam. "Jeder Commit fügt etwas hinzu. Niemand entfernt. Niemand trennt."
 
 "Genau. Das ist die zweite Falle. Nach 'Wir haben doch schon die Infrastruktur' kommt 'Wir haben doch schon die Function App.' Selbe Falle. Neues Kostüm."
 
@@ -309,11 +309,11 @@ Das Team war stolz.
 
 Qion Varr sah den Commit. Sagte nichts.
 
-Er wusste: Der erste Clone war geboren.
+Er wusste: Der erste Service-Klon war geboren.
 
 ---
 
-## III. Die Clone-Armee wächst
+## III. Die Service-Klone wachsen
 
 API Beta war ein Erfolg.
 
@@ -498,7 +498,7 @@ Er schrieb ans Whiteboard.
 
 ```text
 Option 1: Nichts tun
-- Klonkriege eskalieren
+- Service-Duplikation eskaliert
 - 12 APIs → 24 APIs → 47 APIs
 - Jeden Bug fixen wir sechsmal
 - Jedes Feature implementieren wir sechsmal
@@ -1242,7 +1242,7 @@ Microservice Deployment ≠ Microservice Architecture
 
 Aber diese Gleichungen waren subtil. Sie manifestierten sich nicht sofort.
 
-**Die DMS Klonkriege:** Die ersten sechs Monate nach dem Split waren produktiv. Schnell. Erfolgreich. Die Probleme kamen schleichend.
+**Die DMS Service-Klone:** Die ersten sechs Monate nach dem Split waren produktiv. Schnell. Erfolgreich. Die Probleme kamen schleichend.
 
 **Die BPP Übernahme:** Ein Service, der wie ein Microservice aussah. Aber ein Monolith war. Das Schlimmste aus beiden Welten.
 
@@ -1392,7 +1392,7 @@ Cassandra wurde verflucht: Sie konnte die Zukunft sehen, aber niemand glaubte ih
 
 Qion Varr war der Cassandra des Teams.
 
-Er sah die Klonkriege kommen. Er warnte.
+Er sah die Service-Klone kommen. Er warnte.
 
 Er sah das BPP-Disaster kommen. Er warnte.
 
@@ -1411,7 +1411,7 @@ Qion Varr stand vor zwei Whiteboards.
 **Links: DMS Service**
 
 ```text
-Klonkriege - Status
+Service-Klone – Status
 ├── 2 APIs migriert ✓
 ├── 10 APIs in alter Function App ✗
 ├── 87.7% Code-Duplikation
@@ -1613,4 +1613,4 @@ Arik Dane las es. Dann noch einmal.
 
 *"Lerne ganz. Oder lerne nicht. Aber glaube nie, dass eine gewonnene Schlacht der Krieg ist."*
 
-– Qion Varr, Überlebender der Klonkriege (und jetzt auch der BPP Wars)
+– Qion Varr, Überlebender der Service-Klone (und jetzt auch der BPP Wars)

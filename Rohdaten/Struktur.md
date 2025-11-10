@@ -1,6 +1,6 @@
-# Die Chroniken der Code-Kriege: Zehn Schlachten, die jedes Softwareprojekt schlägt
+# Die Chroniken der Code-Kriege: Zwölf Schlachten, die jedes Softwareprojekt schlägt
 
-## Aktualisierte Buchstruktur (11 Kapitel)
+## Finale Buchstruktur (12 Kapitel) ✅
 
 ---
 
@@ -14,7 +14,7 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 
 ## Die Kapitel
 
-### **Kapitel 1: Der strahlende X-Wing**
+### **Kapitel 1: Der Kristall und die Gnade der Trennung**
 
 - **Die Schlacht:** Das Architektur-Vakuum
 - **Die Lektion:** "TBD" ist keine Strategie, sondern ein Todesstern in der Entwicklung
@@ -63,7 +63,7 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 - **Der Feind:** Die Illusion der schnellen Lösung
 - **Status:** ✅ Vollständig
 
-### **Kapitel 8: Die Strangler Migration** ⭐ NEU
+### **Kapitel 8: Die Strangler Migration**
 
 - **Die Schlacht:** Wie man einen Elefanten isst – Stück für Stück, bis man erstickt
 - **Die Lektion:** Strangler Pattern ohne Zeitlimit = zwei tote Systeme
@@ -71,29 +71,38 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 - **Kausale Verbindung:**
   - Von Kapitel 7: CTO wählt "Option D" (Facade)
   - Zu Kapitel 9: Events werden eingeführt und explodieren
-- **Status:** ✅ NEU ERSTELLT
+- **Status:** ✅ Vollständig
 
-### **Kapitel 9: Die Event-Storm** (vorher Kapitel 8)
+### **Kapitel 9: Die zwei Welten**
 
-- **Die Schlacht:** Event-Proliferation ohne Budget
-- **Die Lektion:** Events ohne Budget sind Chaos mit guten Absichten
-- **Der Feind:** Die Demokratie ohne Disziplin
-- **Status:** ✅ Vollständig (muss umnummeriert werden)
+- **Die Schlacht:** Parallele V2/V3 Systeme – Die Hölle der geteilten Aufmerksamkeit
+- **Die Lektion:** Parallel Systems sind nicht 2×, sondern 4× die Arbeit
+- **Der Feind:** Die Angst vor dem Big Bang Switch
+- **Status:** ✅ Vollständig
 
-### **Kapitel 10: Die Sonar-Inquisition** (vorher Kapitel 7)
+### **Kapitel 10: Der Friedhof der Sternenzerstörer** ⭐ WIEDER EINGEFÜGT
+
+- **Die Schlacht:** Synchrone HTTP-Calls zwischen Microservices
+- **Die Lektion:** Ein HTTP-Call ist harmlos. 23 sind ein Todesstern.
+- **Der Feind:** Die Versuchung der Einfachheit
+- **Kausale Verbindung:**
+  - Von Kapitel 6: Governance etabliert, aber nicht für Runtime-Dependencies
+  - Zu Kapitel 11: Team lernt, dass auch Runtime-Patterns geprüft werden müssen
+- **Status:** ✅ WIEDER EINGEFÜGT (aus Rohentwurf extrahiert)
+
+### **Kapitel 11: Die Sonar-Inquisition**
 
 - **Die Schlacht:** Code-Quality-Governance und automatisierte Enforcement
 - **Die Lektion:** Metriken als Spiegel, nicht als Peitsche
 - **Der Feind:** Die Balance zwischen Perfektion und Pragmatismus
-- **Neue Position:** Nach Event-Storm für besseren Governance-Arc
-- **Status:** ✅ Vollständig (muss umnummeriert werden)
+- **Status:** ✅ Vollständig
 
-### **Kapitel 11: Der Feature-Krieg** (vorher Kapitel 10)
+### **Kapitel 12: Der Feature-Krieg**
 
 - **Die Schlacht:** Feature Factory vs. Outcome
 - **Die Lektion:** "Nein" sagen ist keine Schwäche, sondern Strategie
 - **Der Feind:** Der eigene Ehrgeiz
-- **Status:** ✅ Vollständig (muss umnummeriert werden)
+- **Status:** ✅ Vollständig
 
 ---
 
@@ -115,60 +124,53 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 - Kap 5: Keine Observability → Blindheit
 - Kap 6: Keine Governance → Chaos
 
-### Arc 3: Legacy & Migration (Kapitel 7-8) ⭐ NEU
+### Arc 3: Legacy & Migration (Kapitel 7-9)
 
 **Thema:** Der Kampf mit dem Alten
 
-- Kap 7: Legacy-Entscheidung → "Option D" (Facade)
-- Kap 8: Strangler-Migration → Events entstehen, Complexity explodiert
+- Kap 7: Legacy-Entscheidung → "Option D" (Facade), dann ehrlicher Monolith
+- Kap 8: Strangler-Migration → Events entstehen, Complexity explodiert, 18 Monate Kampf
+- Kap 9: Parallele Systeme (V2/V3) → Die Hölle der geteilten Aufmerksamkeit
 
-### Arc 4: Governance-Reifung (Kapitel 9-10)
+### Arc 4: Runtime-Realität & Governance (Kapitel 10-11)
 
-**Thema:** Von Chaos zu Kontrolle
+**Thema:** Von Struktur-Governance zu Runtime-Disziplin
 
-- Kap 9: Event-Chaos → Event-Budget
-- Kap 10: Code-Quality → Balanced Enforcement
+- Kap 10: Friedhof der Sternenzerstörer → HTTP-Dependencies als trojanisches Pferd
+- Kap 11: Code-Quality → Balanced Enforcement (Sonar als Werkzeug, nicht Religion)
 
-### Arc 5: Strategische Reife (Kapitel 11)
+### Arc 5: Strategische Reife (Kapitel 12)
 
 **Thema:** Outcome über Output
 
-- Kap 11: Feature-Pressure → Strategic Nein
+- Kap 12: Feature-Pressure → Strategic Nein (Der Mut, "Nein" zu sagen)
 
 ---
 
 ## Wichtige Änderungen in der Reihenfolge
 
-### Original-Struktur (10 Kapitel):
+### Finale Struktur (12 Kapitel):
 
-```
-1. X-Wing
+```text
+1. Der Kristall und die Gnade der Trennung (X-Wing)
 2. Wir haben doch schon
 3. Clone Wars
 4. Monolith-Erwachen
 5. Incident-Lawine
-6. Lord Vader
-7. Sonar-Inquisition ← war hier
-8. Friedhof der Sternzerstörer (entfernt)
-9. Event-Storm
-10. Feature-Krieg
-```
-
-### Neue Struktur (11 Kapitel):
-
-```
-1. X-Wing
-2. Wir haben doch schon
-3. Clone Wars
-4. Monolith-Erwachen
-5. Incident-Lawine
-6. Lord Vader
+6. Lord Vader (Governance-Lords Rückkehr)
 7. Geister der Legacy (BPP-Entscheidung)
-8. Strangler Migration ← NEU - Die Brücke!
-9. Event-Storm ← Jetzt logisch verbunden mit Kap 8
-10. Sonar-Inquisition ← Nach Event-Governance
-11. Feature-Krieg
+8. Strangler Migration (Die Brücke zwischen Legacy und Event-Storm)
+9. Die zwei Welten (Parallele V2/V3 Systeme)
+10. Friedhof der Sternenzerstörer ← WIEDER EINGEFÜGT!
+11. Sonar-Inquisition
+12. Feature-Krieg
 ```
+
+### Warum "Friedhof" als Kapitel 10?
+
+- **Narrativ:** Nach der Hölle paralleler Systeme (Kap 9) kommt die subtile Gefahr: HTTP-Dependencies
+- **Thematisch:** Schließt den Runtime-Arc ab (Kap 6 = Structure Governance, Kap 10 = Runtime Governance)
+- **Prolog-Einlösung:** Das Kapitel war im Prolog versprochen, fehlte aber in der Struktur
 
 ---
 
@@ -176,16 +178,18 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 
 ### Die kausale Kette ist jetzt geschlossen:
 
-**Kapitel 7 → 8 → 9:**
+**Kapitel 7 → 8 → 9 → 10:**
 
-1. **Kap 7:** CTO entscheidet für "Option D" (moderne Facade um alte SPs)
-2. **Kap 8:** Team baut Strangler-Migration, führt Events ein, Events multiplizieren sich
-3. **Kap 9:** Event-Storm erreicht kritische Masse, Team muss Event-Budget einführen
+1. **Kap 7:** CTO entscheidet: Ehrlicher Monolith, später richtiger Rewrite
+2. **Kap 8:** Team startet Strangler-Migration (BPP), führt Events ein, 89 Event Types nach 12 Monaten
+3. **Kap 9:** Parallele V2/V3 Systeme – dieselbe Hölle auf System-Ebene, 8 Monate Leid
+4. **Kap 10:** Friedhof der Sternenzerstörer – 23 HTTP-Dependencies schleichen sich ein, Security Breach
 
-**Kapitel 9 → 10:**
+**Kapitel 10 → 11 → 12:**
 
-1. **Kap 9:** Team lernt: Events brauchen Governance
-2. **Kap 10:** Governance-Lektion wird auf Code-Quality ausgeweitet (Sonar)
+1. **Kap 10:** Team lernt: Architektur-Drift durch „quick fixes" ist tödlich
+2. **Kap 11:** Governance-Lektion wird auf Code-Quality ausgeweitet (Sonar als Werkzeug)
+3. **Kap 12:** Strategische Reife: "Nein" sagen als Superkraft
 
 ### Die thematischen Arcs sind kohärent:
 
@@ -196,12 +200,17 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 
 ---
 
-## Nächste Schritte
+## Abgeschlossene Umstrukturierung ✅
 
-1. ✅ **Kapitel 8 erstellt** (Die Strangler Migration)
-2. ⏳ **Kapitel 9 anpassen:** Referenzen zu Kapitel 8 hinzufügen (kurzer Rückblick)
-3. ⏳ **Kapitel 7 erweitern:** Ende von Kap 7 muss zu Kap 8 überleiten
-4. ⏳ **Kapitel nummerierung:** Alle folgenden Kapitel umnummerieren (9→10, 10→11)
+1. ✅ **Kapitel 8 erstellt** (Die Strangler Migration) – 877 Zeilen, Manifest-Stil
+2. ✅ **Kapitel 10 wieder eingefügt** (Der Friedhof der Sternenzerstörer) – 1043 Zeilen, aus Rohentwurf extrahiert
+3. ✅ **Alle Kapitel umnummeriert:**
+   - Kapitel 10: Der Friedhof der Sternenzerstörer (NEU)
+   - Kapitel 11: Die Sonar-Inquisition (vorher Kap 10)
+   - Kapitel 12: Der Feature-Krieg (vorher Kap 11)
+4. ✅ **Duplikate entfernt:** Kapitel 13 (Feature-Krieg-Duplikat) gelöscht
+5. ✅ **Prolog aktualisiert:** Alle 12 Kapitel in korrekter Reihenfolge
+6. ✅ **Struktur.md aktualisiert:** Finale 12-Kapitel-Struktur dokumentiert
 
 ---
 
@@ -223,6 +232,12 @@ Ein Projekt beginnt mit Hoffnung. Es endet mit Erschöpfung. Dazwischen: die ewi
 
 ---
 
-*"Das Buch ist jetzt vollständig. Elf Kapitel. Eine durchgehende Story. Von 'TBD' bis 'Outcome über Output'. Von Chaos zu Reife. Von Naivität zu Weisheit."*
+*"Das Buch ist jetzt vollständig. Zwölf Kapitel. Eine durchgehende Story. Von 'TBD' bis 'Outcome über Output'. Von Chaos zu Reife. Von Naivität zu Weisheit. Die Strangler-Migration hat ihren Platz gefunden – zwischen der Entscheidung und dem Chaos, das sie hervorbringt."*
 
 — Qion Varr, Architekt und Chronist
+
+---
+
+## Status: ABGESCHLOSSEN ✅
+
+Die narrative Lücke zwischen Kapitel 7 (Legacy-Entscheidung) und der Event-Storm ist geschlossen. Das Buch hat jetzt einen vollständigen Arc von Architektur-Naivität bis strategische Reife.

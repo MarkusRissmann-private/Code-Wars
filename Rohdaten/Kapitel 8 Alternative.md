@@ -1,4 +1,4 @@
-# Kapitel 9: Die zwei Welten
+# Kapitel 8: Die zwei Welten
 
 ## Prolog: Das Schisma
 
@@ -111,7 +111,7 @@ Woche 4.
 
 Ein kritischer Bug in V2. Ein Memory Leak. Altbekannt. Seit Monaten.
 
-"Können wir das endlich fixen?" fragte Oben.
+"Können wir das endlich fixen?" fragte Obi-Wan.
 
 "In welchem System?"
 
@@ -199,7 +199,7 @@ Qion teilte seinen Screen. Ein anderes Dokument: **"Development Effort Breakdown
 
 Die Stille im Raum war greifbar.
 
-"77%," wiederholte Oben. "Wir verschwenden drei Viertel unserer Zeit auf... was?"
+"77%," wiederholte Obi-Wan. "Wir verschwenden drei Viertel unserer Zeit auf... was?"
 
 "Auf das Betreiben von zwei Welten," sagte Qion.
 
@@ -454,7 +454,7 @@ Der Tech Lead: "Okay. Wir sind ready. V3 ist getestet. Infrastructure ist scaled
 
 Qion Varr: "Erinnerung: Kein Rollback. Wir springen. Oder wir fallen."
 
-Oben: "Motivational."
+Obi-Wan: "Motivational."
 
 17:58 Uhr: CTO joined the call.
 
@@ -527,7 +527,7 @@ Sieben Jahre. Millionen von Requests. Tausende von Bugs. Hunderte von Features.
 
 Und jetzt: Tot.
 
-Oben: "Es fühlt sich... seltsam an. Wie ein Freund, der geht."
+Obi-Wan: "Es fühlt sich... seltsam an. Wie ein Freund, der geht."
 
 Qion: "Es war kein Freund. Es war ein Gefängnis. Und wir sind frei."
 
@@ -618,13 +618,12 @@ Das Team machte eine umfassende Post-Mortem. Nicht von einem Incident. Von einer
 
 Parallel Systems sind nicht 2× ein System.  
 Sie sind 4× die Arbeit:
-
 1. Development in System A
 2. Development in System B  
 3. Koordination zwischen A und B
 4. "Which system" overhead
 
-### Oben: Die Angst vor dem Switch
+### Obi-Wan: Die Angst vor dem Switch
 
 *"Wir hätten nach Monat 3 switchen können. Technisch. Aber wir hatten Angst. Und diese Angst kostete uns fünf weitere Monate. Die Ironie: Als wir endlich switchten, ging es perfekt. Die Angst war unbegründet."*
 
@@ -704,7 +703,7 @@ Arik reflektierte: "Erinnert ihr euch, als wir zwei Systeme hatten?"
 
 "Kaum," sagte Palpatine. "Es fühlt sich an wie ein schlechter Traum."
 
-Oben: "Ich erinnere mich an die Erleichterung. Als V2 endlich starb. Als wir endlich nur noch EIN System hatten."
+Obi-Wan: "Ich erinnere mich an die Erleichterung. Als V2 endlich starb. Als wir endlich nur noch EIN System hatten."
 
 Qion: "Die wichtigste Lektion war nicht technisch. Sie war psychologisch."
 
@@ -743,49 +742,39 @@ Er zeigte eine Folie vom letzten All-Hands:
 🔴 **Erkenne die Falle, bevor du reinfällst:**
 
 ⚠️ **"We'll run both systems until the new one is ready"**
-
 - "Ready" wird nie definiert
 - "Until" wird zu "forever"
 
 ⚠️ **"We need feature parity first"**
-
 - Feature parity ist eine bewegliche Zielscheibe
 - Während du Features nachholst, kommen neue
 
 ⚠️ **"Let's migrate traffic gradually"**
-
 - Graduell ist gut
 - Aber "graduell forever" ist nicht graduell, es ist Stillstand
 
 ⚠️ **"We can't switch yet, what if there are bugs?"**
-
 - Es gibt immer Bugs
 - In beiden Systemen
 
 ⚠️ **"Old system has critical users who can't switch"**
-
 - Nach 6 Monaten: Immer noch "critical users"
 - Nach 12 Monaten: Immer noch "can't switch"
 
 ⚠️ **"We're being careful"**
-
 - Careful ist gut
 - Paralysis durch overcaution ist nicht careful, es ist Angst
 
 ⚠️ **Development velocity fällt, aber niemand fragt warum**
-
 - Der Grund ist immer: Parallel Systems Tax
 
 ⚠️ **"Just one more feature in the old system"**
-
 - Das erste "just one more" ist nie das letzte
 
 ⚠️ **Kein klares Shutdown-Datum für das alte System**
-
 - Ohne Sterbedatum stirbt es nie
 
 ⚠️ **"We need a rollback plan"**
-
 - Rollback-Pläne sind Sicherheitsnetze
 - Aber manchmal braucht man den Mut, ohne Netz zu springen
 
@@ -836,8 +825,4 @@ Er zeigte eine Folie vom letzten All-Hands:
 
 ---
 
-**Nächstes Kapitel:** „Der Friedhof der großen Services" – Synchrone HTTP-Calls zwischen Microservices und die Versuchung der Einfachheit.
-
-**Ende von Kapitel 9.**
-
-*Möge der Compiler mit dir sein.*
+**Nächstes Kapitel:** "Der Friedhof der Code-Fortresses" - Synchrone Service Dependencies und der Weg zum echten Microservices-System.

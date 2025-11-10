@@ -10,7 +10,7 @@
 
 Der alte Meister des Ordens öffnete ein Deployment-Diagramm. Datiert: Vor acht Monaten.
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║           V3 SYSTEM - MODERN STACK             ║
 ╠════════════════════════════════════════════════╣
@@ -44,7 +44,7 @@ Der junge Schüler starrte auf das Diagramm. "Aber... sie haben doch V3 gebaut? 
 
 Er scrollte zum nächsten Diagramm. Heute.
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║        V3 SYSTEM - THE UNCOMFORTABLE TRUTH     ║
 ╠════════════════════════════════════════════════╣
@@ -89,7 +89,7 @@ Dann kam das Ticket.
 
 **Feature Request #892:** "BPP Calculation Performance Degradation - P1"
 
-```text
+```
 Customer Report:
 - Calculation requests take 15-45 seconds
 - Sometimes timeout completely
@@ -106,7 +106,7 @@ BPP Calculation Service: 🔴 Red. Response Time: 23 seconds average.
 
 "Wann ist das passiert?" fragte der Tech Lead.
 
-"Schwer zu sagen," antwortete Oben Kell. "Wir haben kein richtiges Monitoring für BPP. Es ist... außerhalb unseres Stacks."
+"Schwer zu sagen," antwortete Obi-Wan. "Wir haben kein richtiges Monitoring für BPP. Es ist... außerhalb unseres Stacks."
 
 "Außerhalb?"
 
@@ -134,7 +134,7 @@ Mehr Stille.
 
 "Hat IRGENDWER jemals den BPP-Code gesehen?"
 
-Schließlich, Oben Kell: "Ich habe mal reingeschaut. Vor zwei Jahren. Kurz."
+Schließlich, Obi-Wan: "Ich habe mal reingeschaut. Vor zwei Jahren. Kurz."
 
 "Und?"
 
@@ -142,7 +142,7 @@ Schließlich, Oben Kell: "Ich habe mal reingeschaut. Vor zwei Jahren. Kurz."
 
 Er teilte seinen Screen. Öffnete SQL Server Management Studio. Navigierte zur BPP-Datenbank.
 
-```text
+```
 BPP_Calculation_DB
 ├── Stored Procedures (47)
 │   ├── sp_CalculateBPP_Main (1,847 lines)
@@ -182,7 +182,7 @@ Arik starrte auf die Zahlen. "8,000 Zeilen Stored Procedures?"
 
 Der Tech Lead lehnte sich zurück. "Okay. Wir schauen uns die Main-Procedure an."
 
-Oben Kell öffnete `sp_CalculateBPP_Main`. Scrollte. Und scrollte. Und scrollte.
+Obi-Wan öffnete `sp_CalculateBPP_Main`. Scrollte. Und scrollte. Und scrollte.
 
 ```sql
 CREATE PROCEDURE sp_CalculateBPP_Main
@@ -267,7 +267,7 @@ Die Stille im Raum war greifbar.
 
 "Das," sagte Arik langsam, "ist nicht maintainable."
 
-"Nein," bestätigte Oben Kell.
+"Nein," bestätigte Obi-Wan.
 
 "Das ist nicht testable."
 
@@ -285,7 +285,7 @@ Das Team stand vor einer Entscheidung.
 
 **Option A: Big Bang Rewrite**
 
-```text
+```
 Plan:
 1. Verstehe alle 8,000 Zeilen SP Code
 2. Extrahiere alle Business Rules
@@ -300,7 +300,7 @@ Chance of Success: ???
 
 **Option B: Strangler Fig Pattern**
 
-```text
+```
 Plan:
 1. Neue BPP Service (C#, cloud-native)
 2. Migriere Calculation-Types einer nach dem anderen
@@ -314,7 +314,7 @@ Complexity: 🔥🔥🔥🔥 (VERY HIGH)
 
 **Option C: Leave It Alone**
 
-```text
+```
 Plan:
 1. Don't touch it
 2. Seriously, don't
@@ -451,7 +451,7 @@ public class BppCalculationService
 
 Das Deployment-Diagramm wurde aktualisiert:
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║           V3 SYSTEM - "MODERNIZED"             ║
 ╠════════════════════════════════════════════════╣
@@ -494,7 +494,7 @@ Die SQL Server VM hatte einen Memory Leak. Langsam. Unsichtbar. Der Performance 
 
 Um 14:47 Uhr: SQL Server begann zu swappen. Stored Procedures liefen langsamer. 5 Sekunden. 10 Sekunden. 20 Sekunden.
 
-Um 14:53 Uhr: Das Kubernetes Cluster sah: "BPP Service unhealthy" (weil die SP-Calls liefen in timeouts).
+Um 14:53 Uhr: Das Kubernetes Cluster sah: "BPP Service unhealthy" (weil die SP-Calls timeouteten).
 
 Kubernetes Reaktion: "Kill the pod. Restart."
 
@@ -508,7 +508,7 @@ SQL Server: 100% CPU. Deadlocks. Connection Pool exhausted.
 
 Um 15:12 Uhr: **Total System Failure**
 
-Nicht nur BPP. Alle Services, die BPP brauchten (und das waren ALLE), warfen Fehler.
+Nicht nur BPP. Alle Services, die BPP brauchten (und das waren ALLE), failten.
 
 Die schöne Microservices-Architektur? Gestorben. Weil ein 7 Jahre alter Stored Procedure auf einer Windows Server 2012 VM ein Memory-Problem hatte.
 
@@ -534,7 +534,7 @@ Alle sahen ihn an.
 
 Er stand auf. Ging zum Whiteboard.
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║              DIE WAHRHEIT                      ║
 ╠════════════════════════════════════════════════╣
@@ -572,7 +572,7 @@ Qion zeichnete zwei Optionen:
 
 **Option 1: Ehrlicher Monolith**
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║  ACCEPT THE TRUTH                              ║
 ╠════════════════════════════════════════════════╣
@@ -600,7 +600,7 @@ Qion zeichnete zwei Optionen:
 
 **Option 2: Echter Rewrite (aber diesmal richtig)**
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║  THE HARD WAY                                  ║
 ╠════════════════════════════════════════════════╣
@@ -649,7 +649,7 @@ Sechs Wochen später.
 
 Das Team präsentierte das neue Setup:
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║      BPP CALCULATION SERVICE - HONEST          ║
 ╠════════════════════════════════════════════════╣
@@ -712,7 +712,7 @@ Arik Dane reflektierte: "Wir haben ein Jahr verloren."
 
 Qion zeigte ein Dokument: **"BPP Rewrite Progress - Q3"**
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║        BPP MODERNISIERUNG - REAL               ║
 ╠════════════════════════════════════════════════╣
@@ -786,7 +786,7 @@ Qion zeigte ein Dokument: **"BPP Rewrite Progress - Q3"**
 
 ## Die Regel für Legacy-Modernisierung
 
-```text
+```
 ╔════════════════════════════════════════════════╗
 ║                                                 ║
 ║        THE HONEST MODERNIZATION LAW            ║
@@ -820,4 +820,4 @@ Qion zeigte ein Dokument: **"BPP Rewrite Progress - Q3"**
 
 ---
 
-**Nächstes Kapitel:** „Die Strangler Migration" – Wie man einen Elefanten isst. Stück für Stück. Type für Type. Event für Event. Bis man an den Stoßzähnen erstickt.
+**Nächstes Kapitel:** "Die zwei Welten" - Wenn V2 Legacy und V3 Modern parallel laufen, und beide ihr eigenes Chaos haben.

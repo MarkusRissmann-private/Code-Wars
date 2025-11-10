@@ -48,7 +48,7 @@ Der Schüler las den Namen. "Head of IT Governance. Das ist—"
 
 ## I. Die Goldenen Wochen
 
-Vier Wochen nach Obi-Wans Fast-Kündigung.
+Vier Wochen nach Obens Fast-Kündigung.
 
 Das Team saß im Daily Standup. Aber es fühlte sich nicht wie ein Standup an. Es fühlte sich wie... eine Therapie-Gruppe. Eine Gruppe, die geheilt war.
 
@@ -148,7 +148,7 @@ Architecture Principles (Non-negotiable):
 └── Cloud-native patterns
 ```
 
-"Das ist," flüsterte Obi-Wan, "ein ganzes Semester Computer Science."
+"Das ist," flüsterte Oben, "ein ganzes Semester Computer Science."
 
 "In fünf Tagen," ergänzte Sora.
 
@@ -222,7 +222,7 @@ Er drehte sich um. "Seht ihr? Die harte Arbeit ist gemacht. Die Architektur ist 
 
 "Dokumentieren," vollendete Arik den Satz.
 
-"Und präsentieren," ergänzte Obi-Wan.
+"Und präsentieren," ergänzte Oben.
 
 Qion nickte. "Der Governance‑Lord will nicht, dass wir sein System neu bauen. Er will sehen, dass wir nachgedacht haben. Dass wir Prinzipien haben. Dass wir dem Architektenorden würdig sind."
 
@@ -311,9 +311,9 @@ Sora nickte. "Die Commit-Bruderschaft wäre stolz. Wir haben die History bewahrt
 
 ### Tag 2: Die Karten der Macht
 
-Obi-Wan und der Tech Lead: **Data Flow Diagrams**
+Oben und der Tech Lead: **Data Flow Diagrams**
 
-"Ich habe in meinem Leben viele Dinge gezeichnet," sagte Obi-Wan. "User Stories. Sequence Diagrams. Architecture Sketches. Aber noch nie DFDs."
+"Ich habe in meinem Leben viele Dinge gezeichnet," sagte Oben. "User Stories. Sequence Diagrams. Architecture Sketches. Aber noch nie DFDs."
 
 "Das ist einfach," sagte der Tech Lead. "Du zeichnest, wohin die Daten fließen."
 
@@ -376,7 +376,7 @@ Notification-Service: SEND_CONFIRMATION
 
 Nach zwei Tagen hatten sie vier Ebenen. Jede zeigten einen anderen Blickwinkel auf das System. Jede beantwortete eine andere Frage.
 
-"Fertig," sagte Obi-Wan.
+"Fertig," sagte Oben.
 
 Der Tech Lead betrachtete die Diagramme. "Weißt du, was das Beste ist?"
 
@@ -592,7 +592,7 @@ Nur drei. Das fühlte sich entweder sehr gut an oder sehr schlecht.
 
 Stille. Was war die richtige Antwort?
 
-Dann, Obi-Wan: "Wir alle. Das Team."
+Dann, Oben: "Wir alle. Das Team."
 
 **"Nicht ein Architekt? Nicht ein Technical Writer?"**
 
@@ -705,9 +705,9 @@ Der Governance‑Lord öffnete ein Dokument. Teilte seinen Screen.
 
 Der Tech Lead fand keine Worte.
 
-Der Governance‑Lord fuhr fort: **"Ich möchte, dass ihr einen Vortrag haltet. Firmen-weit. Titel: 'Von einem X-Wing zu fünf Services: Eine Reise durch die Hölle und zurück.' Erzählt alles. Die Fehler. Die Lektionen. Alles."**
+Der Governance‑Lord fuhr fort: **„Ich möchte, dass ihr einen Vortrag haltet. Firmen-weit. Titel: ‚Von einem Service zu fünf Services: Eine Reise durch die Hölle und zurück.' Erzählt alles. Die Fehler. Die Lektionen. Alles."**
 
-"Alles?" fragte Obi-Wan. "Auch die peinlichen Teile?"
+"Alles?" fragte Oben. "Auch die peinlichen Teile?"
 
 **"Besonders die peinlichen Teile. Die sind die lehrreichsten."**
 
@@ -729,7 +729,7 @@ Das Team saß da. Stumm. Dann brach der Damm.
 
 "Reference Architecture," murmelte Arik. "Wir sind Reference Architecture."
 
-"Wir sollen andere Teams trainieren," sagte Obi-Wan ungläubig.
+"Wir sollen andere Teams trainieren," sagte Oben ungläubig.
 
 Der Tech Lead lehnte sich zurück. Schloss die Augen. **"Wir haben es geschafft. Wirklich geschafft."**
 
@@ -739,7 +739,7 @@ Qion, der die ganze Zeit geschwiegen hatte, sprach schließlich:
 
 Alle drehten sich zu ihm.
 
-"Was meinst du, nein?" fragte Arik. "Wir haben bestanden! Vader hat uns gelobt!"
+"Was meinst du, nein?" fragte Arik. "Wir haben bestanden! Er hat uns gelobt!"
 
 "Ja," sagte Qion. "Aber das ist nicht das Ende. Das ist ein Checkpoint."
 
@@ -748,7 +748,7 @@ Alle drehten sich zu ihm.
 Qion stand auf. Ging zum Whiteboard. Zeichnete eine Timeline:
 
 ```text
-Year 0: Der X-Wing (naive confidence)
+Year 0: Der erste Service (naive confidence)
 Year 1: Die Hölle (painful learning)
 Year 2: Die Weisheit (hard-won knowledge)
 Year 3: Die Verantwortung (teaching others)
@@ -779,7 +779,7 @@ Der Tech Lead hob sein Glas: "Auf uns. Auf die Reise. Auf die Lektionen. Und dar
 
 Sie tranken. Lachten. Erzählten Geschichten von der Hölle, die sie durchlebt hatten. Aber die Geschichten waren jetzt anders. Nicht mehr traumatisch. Sondern... stolz.
 
-Am Ende des Abends, als sie gingen, sagte Obi-Wan leise zu Qion:
+Am Ende des Abends, als sie gingen, sagte Oben leise zu Qion:
 
 "Danke."
 
@@ -832,7 +832,7 @@ Gute Architektur ist nicht genug. Du musst auch zeigen können, dass du weißt, 
    - Dokumentation ohne gute Architektur = Lügen auf Papier
    - Beides zusammen = Weisheit, die überlebt
 
-**Die Fallstricke, die Vader sucht:**
+**Die Fallstricke, die Governance sucht:**
 
 ```text
 ❌ "Wir haben keine Schwächen"
@@ -858,7 +858,7 @@ Gute Architektur ist nicht genug. Du musst auch zeigen können, dass du weißt, 
 - [ ] Ihr seid bereit, andere zu lehren
 - [ ] **Ihr versteht, dass Architektur ein Weg ist, kein Ziel**
 
-**Der Moment, in dem Vader weiß, dass du reif bist:**
+**Der Moment, in dem Governance weiß, dass du reif bist:**
 
 Nicht wenn du sagst: "Wir sind perfekt."  
 Sondern wenn du sagst: "Wir waren Idioten. Hier ist, was wir gelernt haben."
@@ -873,4 +873,4 @@ Bereit?
 
 ---
 
-*Nächstes Kapitel: Wenn die Meister zu Lehrern werden. Und neue Padawane die alten Fehler wiederholen wollen.*
+*Nächstes Kapitel: Wenn die Meister zu Lehrern werden. Und neue Schüler die alten Fehler wiederholen wollen.*
